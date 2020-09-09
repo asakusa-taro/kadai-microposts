@@ -11,7 +11,8 @@ include SessionsHelper
   def counts(user)
     @count_microposts = user.microposts.count
     @count_followings = user.followings.count
-    @count_followers = user.followers.count    
+    @count_followers = user.followers.count
+    @count_fav_tweets = user.fav_tweets.count
   end
   
 end
